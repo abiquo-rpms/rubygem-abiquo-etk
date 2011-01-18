@@ -5,8 +5,8 @@
 
 Summary: Abiquo Elite Toolkit
 Name: rubygem-%{gemname}
-Version: 0.4.35
-Release: 3%{?dist}
+Version: 0.4.36
+Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
 URL: http://github.com/rubiojr/abiquo-etk
@@ -55,6 +55,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Jan 18 2011 Sergio Rubio <srubio@abiquo.com> - 0.4.36-1
+- updated to upstream version 
+
 * Wed Dec 15 2010 Sergio Rubio <srubio@abiquo.com> - 0.4.35-3
 - rebuilt
 
