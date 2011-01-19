@@ -6,7 +6,7 @@
 Summary: Abiquo Elite Toolkit
 Name: rubygem-%{gemname}
 Version: 0.4.37
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
 URL: http://github.com/rubiojr/abiquo-etk
@@ -15,6 +15,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: rubygems
 Requires: rubygem(nokogiri) >= 1.3
 Requires: rubygem(term-ansicolor) >= 1.0
+Requires: rubygem(iniparse) >= 1.1.4
 BuildRequires: rubygems
 BuildArch: noarch
 Provides: rubygem(%{gemname}) = %{version}
@@ -55,6 +56,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Jan 19 2011 Sergio Rubio <srubio@abiquo.com> - 0.4.37-2
+- add rubygem-iniparse require
+
 * Tue Jan 18 2011 Sergio Rubio <srubio@abiquo.com> - 0.4.37-1
 - updated to upstream version 
 
