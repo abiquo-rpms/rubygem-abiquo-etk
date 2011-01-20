@@ -5,8 +5,8 @@
 
 Summary: Abiquo Elite Toolkit
 Name: rubygem-%{gemname}
-Version: 0.4.37
-Release: 2%{?dist}
+Version: 0.4.38
+Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
 URL: http://github.com/rubiojr/abiquo-etk
@@ -56,6 +56,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Jan 20 2011 Sergio Rubio <srubio@abiquo.com> - 0.4.38-1
+- upstream update
+
 * Wed Jan 19 2011 Sergio Rubio <srubio@abiquo.com> - 0.4.37-2
 - add rubygem-iniparse require
 
