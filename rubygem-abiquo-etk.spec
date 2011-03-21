@@ -5,7 +5,7 @@
 
 Summary: Abiquo Elite Toolkit
 Name: rubygem-%{gemname}
-Version: 0.4.41
+Version: 0.5
 Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 %defattr(-, root, root, -)
 %{_bindir}/abicli
 %{_bindir}/abiquo-check-16-install
-%{_bindir}/abiquo-initenv
+%{_bindir}/abiquo-check-install
 %{gemdir}/gems/%{gemname}-%{version}/
 %doc %{gemdir}/doc/%{gemname}-%{version}
 %doc %{geminstdir}/LICENSE
@@ -56,6 +56,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Mar 21 2011 Sergio Rubio <srubio@abiquo.com> - 0.5-1
+- upstream update
+
 * Fri Jan 28 2011 Sergio Rubio <srubio@abiquo.com> - 0.4.41-1
 - upstream update
 
